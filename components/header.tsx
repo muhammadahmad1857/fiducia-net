@@ -2,10 +2,8 @@ import React from "react";
 import Navbar from "@/components/navbar";
 import {
   FaFacebookF,
-  FaTwitter,
-  FaInstagram,
+
   FaLinkedinIn,
-  FaYoutube,
 } from "react-icons/fa";
 import InstaIcon from "./instaIcon";
 

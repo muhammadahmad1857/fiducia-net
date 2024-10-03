@@ -29,6 +29,7 @@ export default async function Services() {
       <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center  ">
         {data?.map((item: ServicesDataType) => (
           <Link
+            key={item.slug.current}
             href={`/services/${item.slug.current}`}
             className="md:w-96 max-w-xl w-full sm:w-72 h-40 rounded-lg overflow-hidden cursor-pointer shadow-lg"
           >
