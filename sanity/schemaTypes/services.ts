@@ -14,9 +14,23 @@ export default {
       title: "Description",
     },
     {
-      name: "image",
+      name: "icon",
       type: "image",
-      title: "Image",
+      title: "Icon",
+    },
+    {
+      name: "slug",
+      type: "slug",
+      title: "Slug",
+      options: {
+        source: "serviceName",
+        maxLength: 96,
+      },
+    },
+    {
+      name: "color",
+      type: "color",
+      title: "Color",
     },
   ],
 };

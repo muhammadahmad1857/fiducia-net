@@ -19,3 +19,26 @@
   width: 100%;
   height: 100%;
 }
+.btn-radial {
+  background: radial-gradient(circle, rgba(128, 0, 128, 1) 0%, rgba(255, 105, 180, 1) 50%, rgba(255, 0, 0, 1) 100%);
+}
+
+
+
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Color of the scrollbar track */
+  border-radius: 50px; /* Round corners */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f77b4; /* Color of the scrollbar thumb */
+  border-radius: 50px; /* Round corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #223a4a; /* Color of the scrollbar thumb on hover */
+}
