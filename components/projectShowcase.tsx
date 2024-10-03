@@ -46,7 +46,7 @@ const ProjectShowcase = async () => {
             <Link
               href={`/projects/${project.slug.current}`}
               key={project.slug.current}
-              className={`relative rounded-lg h-[500px] lg:min-h-[500px] overflow-hidden group col-span-1 row-span-1 lg:${columnSpan} lg:${rowSpan}`}
+              className={`relative rounded-lg max-lg:h-[500px] lg:min-h-[500px] overflow-hidden group col-span-1 row-span-1 lg:${columnSpan} lg:${rowSpan}`}
             >
               <img
                 className="w-full h-full object-cover transition-transform duration-700 opacity-30"
