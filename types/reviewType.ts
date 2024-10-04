@@ -1,20 +1,14 @@
-type ReviewItem = {
-    markDefs: any[];
-    children: {
+import { PortableTextBlock } from "@portabletext/types";
+
+type ReviewItem = PortableTextBlock[];
+
+export default interface ReviewType {
+  userName: string;
+  review: ReviewItem; // Make review an array of PortableTextBlock
+  image: {
+    asset: {
+      _ref: string;
       _type: string;
-      style: string;
-      _key: string;
-    }[];
-  };
-  
-  export default interface ReviewType {
-    userName: string;
-    review: ReviewItem; // Using ReviewItem as the type for the `review` property
-    image: {
-      asset: {
-        _ref: string;
-        _type: string;
-      };
     };
-  }
-  
+  };
+}

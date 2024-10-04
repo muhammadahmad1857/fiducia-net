@@ -66,7 +66,7 @@ const Testimonial = async () => {
                     {review.userName}
                   </h3>
                   <div className="text-sm md:text-base">
-                    <PortableText value={review.review as any} />
+                    <PortableText value={review.review} />
                   </div>
                 </div>
               </div>
