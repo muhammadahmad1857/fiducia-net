@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const fetchTechnologies = async () => {
   const data = await client.fetch(
-    '*[_type == "technology"] {technologyName, image {asset}}'
+    `*[_type == "technology"] {technologyName, image {asset}}`
   );
   return data;
 };
@@ -44,8 +44,8 @@ const Technologies = async () => {
         </h1>
         <p className="text-white max-md:text-center text-xl">
           We use aspires to enhance the productivity and growth of your business
-          by providing 'Smart Solutions' and 'Digitally Transforming' your
-          business processes. Using latest state-of-the-art Technologies, we're
+          by providing &apos;Smart Solutions&apos; and &apos;Digitally Transforming&apos; your
+          business processes. Using latest state-of-the-art Technologies, we&apos;re
           providing the following services to bring life in your product.
         </p>
 
