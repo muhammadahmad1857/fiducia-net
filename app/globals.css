@@ -42,3 +42,11 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #223a4a; /* Color of the scrollbar thumb on hover */
 }
+
+.choose-us-card{
+  @apply md:w-96  flex max-w-xl w-full flex-col gap-5 bg-main-light cursor-pointer p-6 rounded-lg shadow-lg transition-all duration-300 hover:bg-main-dark  hover:border-main-light border-2 border-transparent
+}
+
+.choose-us-card-title{
+  @apply text-2xl text-main-dark transition-all duration-500 font-bold group-hover:text-white
+}

@@ -32,5 +32,7 @@ export default {
       type: "color",
       title: "Color",
     },
+    
+    
   ],
 };

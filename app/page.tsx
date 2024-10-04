@@ -1,8 +1,10 @@
+import ChooseUs from "@/components/choose-us";
 import Header from "@/components/header";
 import ProjectShowcase from "@/components/projectShowcase";
 import Services from "@/components/services";
+import Testimonial from "@/components/testimonial";
+import Technologies from "@/components/technologies";
 import React from "react";
-
 // const fetchData = async () => {
 //   const data = await client.fetch('*[_type == "reviews"]');
 //   console.log(data);
@@ -19,6 +21,9 @@ const Home = async () => {
       />
         <Services />
         <ProjectShowcase />
+        <ChooseUs/>
+        <Testimonial/>
+        <Technologies/>
     </div>
   );
 };
