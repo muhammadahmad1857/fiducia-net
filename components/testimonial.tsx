@@ -4,6 +4,7 @@ import { client } from "@/sanity/lib/client";
 import ReviewType from "@/types/reviewType";
 import { urlFor } from "@/sanity/lib/image";
 import { Avatar } from "@nextui-org/avatar";
+
 async function fetchTestimonials(): Promise<ReviewType[]> {
   const query = `*[_type == "reviews"] {
     userName,
@@ -58,7 +59,7 @@ const Testimonial = async () => {
                   className={`flex cursor-pointer items-center gap-4 p-4 ${index % 2 === 0 ? "bg-bgColor" : "bg-main-dark"} border border-gray-300 rounded-lg transition-all duration-500  hover:-translate-y-2 shadow-md`}
                 >
                   <Avatar
-                    src={urlFor(review.image?.asset?._ref).url()}
+                    src={review.image?.asset?._ref ? urlFor(review.image.asset._ref).url() : undefined}
                     name={review.userName}
                     className="w-12 h-12 p-1 md:w-16 md:h-16 rounded-full object-cover border border-gray-300"
                   />
@@ -82,3 +83,4 @@ const Testimonial = async () => {
 };
 
 export default Testimonial;
+ 
