@@ -68,7 +68,8 @@ const Testimonial = async () => {
                     isBordered
                     color="secondary"
                     size="lg"
-                    name={review.userName}
+                    // name={review.userName}
+                    showFallback
                   />
 
                   <div className="flex-1 min-w-0">
