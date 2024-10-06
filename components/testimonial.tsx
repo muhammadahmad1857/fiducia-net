@@ -58,7 +58,7 @@ const Testimonial = async () => {
                   className={`flex cursor-pointer items-center gap-4 p-4 ${index % 2 === 0 ? "bg-bgColor" : "bg-main-dark"} border border-gray-300 rounded-lg transition-all duration-500  hover:-translate-y-2 shadow-md`}
                 >
                   <Avatar
-                    src={urlFor(review.image.asset._ref).url()}
+                    src={urlFor(review.image?.asset?._ref).url()}
                     name={review.userName}
                     className="w-12 h-12 p-1 md:w-16 md:h-16 rounded-full object-cover border border-gray-300"
                   />
