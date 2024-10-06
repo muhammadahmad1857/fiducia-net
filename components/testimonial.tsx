@@ -51,27 +51,29 @@ const Testimonial = async () => {
           {/* Animated container for sliding reviews */}
           <div className="absolute w-full h-full animate-continuous-scroll group-hover:[animationPlayState:paused] space-y-4">
             {/* Map through the testimonials */}
-            {[...testimonials, ...testimonials].map((review, index) => (
-              <div
-                key={index}
-                className={`flex cursor-pointer items-center gap-4 p-4 ${index % 2 === 0 ? "bg-bgColor" : "bg-main-dark"} border border-gray-300 rounded-lg transition-all duration-500  hover:-translate-y-2 shadow-md`}
-              >
-                <Avatar
-                  src={urlFor(review.image).url()}
-                  name={review.userName}
-                  className="w-12 h-12 p-1 md:w-16 md:h-16 rounded-full object-cover border border-gray-300"
-                />
-             
-                <div className="flex-1 min-w-0">
-                  <h3 className="font-bold text-base md:text-lg truncate">
-                    {review.userName}
-                  </h3>
-                  <div className="text-sm md:text-base">
-                    <PortableText value={review.review} />
+            {[...testimonials, ...testimonials].map(
+              (review: ReviewType, index: number) => (
+                <div
+                  key={index}
+                  className={`flex cursor-pointer items-center gap-4 p-4 ${index % 2 === 0 ? "bg-bgColor" : "bg-main-dark"} border border-gray-300 rounded-lg transition-all duration-500  hover:-translate-y-2 shadow-md`}
+                >
+                  <Avatar
+                    src={urlFor(review.image.asset._ref).url()}
+                    name={review.userName}
+                    className="w-12 h-12 p-1 md:w-16 md:h-16 rounded-full object-cover border border-gray-300"
+                  />
+
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-bold text-base md:text-lg truncate">
+                      {review.userName}
+                    </h3>
+                    <div className="text-sm md:text-base">
+                      <PortableText value={review.review} />
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              )
+            )}
           </div>
         </div>
       </div>
