@@ -3,9 +3,10 @@ import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import Link from "next/link";
 import ServicesDataType from "@/types/servicesDataType";
+
 const fetchServices = async () => {
   const data = await client.fetch(
-    `*[_type == "services"] | order(_createdAt asc) {
+    `*[_type == "services"]  {
   slug { current },
   serviceName,
   description,

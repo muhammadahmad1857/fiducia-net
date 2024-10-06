@@ -2,7 +2,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { Divide as Hamburger } from "hamburger-react";
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 

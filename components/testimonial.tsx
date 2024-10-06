@@ -3,7 +3,7 @@ import { PortableText } from "@portabletext/react";
 import { client } from "@/sanity/lib/client";
 import ReviewType from "@/types/reviewType";
 import { urlFor } from "@/sanity/lib/image";
-
+import { Avatar } from "@nextui-org/avatar";
 async function fetchTestimonials(): Promise<ReviewType[]> {
   const query = `*[_type == "reviews"] {
     userName,
@@ -56,11 +56,12 @@ const Testimonial = async () => {
                 key={index}
                 className={`flex cursor-pointer items-center gap-4 p-4 ${index % 2 === 0 ? "bg-bgColor" : "bg-main-dark"} border border-gray-300 rounded-lg transition-all duration-500  hover:-translate-y-2 shadow-md`}
               >
-                <img
+                <Avatar
                   src={urlFor(review.image).url()}
-                  alt={review.userName}
+                  name={review.userName}
                   className="w-12 h-12 p-1 md:w-16 md:h-16 rounded-full object-cover border border-gray-300"
                 />
+             
                 <div className="flex-1 min-w-0">
                   <h3 className="font-bold text-base md:text-lg truncate">
                     {review.userName}

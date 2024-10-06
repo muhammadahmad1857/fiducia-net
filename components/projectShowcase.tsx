@@ -49,7 +49,7 @@ const ProjectShowcase = async () => {
               className={`relative rounded-lg max-lg:h-[500px] lg:min-h-[500px] overflow-hidden group max-lg:col-span-1 max-lg:row-span-1 ${columnSpan} ${rowSpan}`}
             >
               <img
-                className="w-full h-full object-cover transition-transform duration-700 opacity-30"
+                className="w-full h-full object-cover transition-transform duration-700 "
                 src={urlFor(project.image.asset._ref).url()}
                 alt={project.projectName}
               />
@@ -58,10 +58,10 @@ const ProjectShowcase = async () => {
                 <p className="text-sm mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                   {project.category}
                 </p>
-                <div className="flex items-center">
+                <div className="flex items-center gap-2">
                   <h1 className="text-2xl font-bold">{project.projectName}</h1>
                   <svg
-                    className="w-6 h-6 ml-2 text-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+                    className="w-6 h-6 mt-2 text-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"

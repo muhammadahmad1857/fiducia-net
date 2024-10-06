@@ -10,10 +10,13 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
+    "@nextui-org/avatar": "^2.0.33",
+    "@nextui-org/react": "^2.4.8",
     "@portabletext/react": "^3.1.0",
     "@sanity/color-input": "^4.0.1",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.58.0",
+    "framer-motion": "^11.11.1",
     "gsap": "^3.12.5",
     "hamburger-react": "^2.5.1",
     "lucide-react": "^0.447.0",
