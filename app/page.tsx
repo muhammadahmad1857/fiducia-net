@@ -5,6 +5,9 @@ import Services from "@/components/services";
 import Testimonial from "@/components/testimonial";
 import Technologies from "@/components/technologies";
 import React from "react";
+import ContactUs from "@/components/contactUs";
+import NewsLetterForm from "@/components/newsLetterForm";
+import NewsletterForm from "@/components/emailSender";
 // const fetchData = async () => {
 //   const data = await client.fetch('*[_type == "reviews"]');
 //   console.log(data);
@@ -19,11 +22,14 @@ const Home = async () => {
         desc="Our advanced cybersecurity solutions are designed to protect your business from emerging threats, ensuring that you can operate confidently and efficiently. "
         title="Stay Secure, Stay Ahead in a Connected World."
       />
-        <Services />
-        <ProjectShowcase />
-        <ChooseUs/>
-        <Testimonial/>
-        <Technologies/>
+      <Services />
+      <ProjectShowcase />
+      <ChooseUs />
+      <Testimonial />
+      <Technologies />
+      <div className="flex flex-col items-center  justify-center py-10">
+        <NewsLetterForm />
+      </div>
     </div>
   );
 };

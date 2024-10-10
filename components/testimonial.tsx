@@ -3,7 +3,7 @@ import { PortableText } from "@portabletext/react";
 import { client } from "@/sanity/lib/client";
 import ReviewType from "@/types/reviewType";
 import { urlFor } from "@/sanity/lib/image";
-import { Avatar } from "@nextui-org/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 async function fetchTestimonials(): Promise<ReviewType[]> {
   const query = `*[_type == "reviews"] {
@@ -58,19 +58,18 @@ const Testimonial = async () => {
                   key={index}
                   className={`flex cursor-pointer items-center gap-4 p-4 ${index % 2 === 0 ? "bg-bgColor" : "bg-main-dark"} border border-gray-300 rounded-lg transition-all duration-500  hover:-translate-y-2 shadow-md`}
                 >
-                  <Avatar
-                    src={
-                      review.image?.asset?._ref
-                        ? urlFor(review.image.asset._ref).url()
-                        : undefined
-                    }
-                    radius="full"
-                    isBordered
-                    color="secondary"
-                    size="lg"
-                    // name={review.userName}
-                    showFallback
-                  />
+                  <Avatar>
+                    <AvatarImage
+                      src={
+                        review.image?.asset?._ref
+                          ? urlFor(review.image.asset._ref).url()
+                          : undefined
+                      }
+                    />
+                    <AvatarFallback>
+                      {review.userName.slice(0, 3)}
+                    </AvatarFallback>
+                  </Avatar>
 
                   <div className="flex-1 min-w-0">
                     <h3 className="font-bold text-base md:text-lg truncate">

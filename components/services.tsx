@@ -27,17 +27,23 @@ export default async function Services() {
     <div className=" md:px-10 px-2  my-10">
       <h1 className="text-4xl font-bold text-center mb-10">Services</h1>
 
-      <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center  ">
+      <div className="grid grid-cols-1  sm:grid-cols-2 xl:grid-cols-3 gap-4 place-items-center  justify-items-center">
         {data?.map((item: ServicesDataType, index: number) => (
           <Link
             key={item.slug.current}
             href={`/services/${item.slug.current}`}
-            className={`  ${index == 0 ? "col-span-3 max-w-xl" : "col-span-1 md:w-96 max-w-xl "}  w-full  h-40 rounded-lg overflow-hidden cursor-pointer shadow-lg`}
+            className={`  ${index == 0 ? "xl:col-span-3 md:col-span-2 max-w-xl" : "col-span-1 md:w-96 lg:w-[360px] max-w-xl "}  w-full  h-40 rounded-lg overflow-hidden cursor-pointer shadow-lg`}
           >
-            <div className="relative w-full h-full  bg-gray-400 transition-all duration-[1200ms] ease-in-out group">
+            <div
+              className="relative w-full h-full  bg-gray-400 transition-all ease-in-out group"
+              style={{ transitionDuration: "1200ms" }}
+            >
               <div
-                className="absolute top-0 left-0 w-28 h-28  rounded-full -translate-x-1/2 -translate-y-1/2 ease-in-out transition-all duration-[1200ms] group-hover:scale-[50]"
-                style={{ backgroundColor: item.color?.hex }}
+                className="absolute top-0 left-0 w-28 h-28  rounded-full -translate-x-1/2 -translate-y-1/2 ease-in-out transition-all group-hover:scale-[50]"
+                style={{
+                  backgroundColor: item.color?.hex,
+                  transitionDuration: "1200ms",
+                }}
               ></div>
               <div className="relative z-10 p-3 flex flex-col h-full">
                 <div className="flex items-start">

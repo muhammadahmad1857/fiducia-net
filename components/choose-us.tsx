@@ -10,7 +10,7 @@ const ChooseUs = () => {
         We are a team of experienced professionals who are dedicated to
         providing the best service to our clients.
       </p>
-      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10 sm:justify-items-center">
+      <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 place-items-center justify-items-center gap-10 ">
         <div className="choose-us-card group">
           <h3 className="choose-us-card-title ">Our Mission</h3>
           <p className="text-lg text-white">
@@ -26,7 +26,7 @@ const ChooseUs = () => {
             solutions.
           </p>
         </div>
-        <div className="choose-us-card md:col-span-2 lg:col-span-1 group">
+        <div className="choose-us-card md:col-span-2 xl:col-span-1 group">
           <h3 className="choose-us-card-title">Our Values</h3>
           <p className="text-lg text-white">
             Integrity, innovation, and client-centricity are at the core of
