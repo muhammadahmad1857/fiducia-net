@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`flex w-full   bg-[#08052C]  h-14 border-b border-white/30 items-center justify-between fixed text-white md:relative top-0  md:px-10 px-2 z-50 py-2  md:py-10 transition-all duration-300`}
+        className={`flex w-full   bg-black  h-14 border-b border-white/30 items-center justify-between fixed text-white md:relative top-0  md:px-10 px-2 z-50 py-2  md:py-10 transition-all duration-300`}
       >
         <img src="/logo.png" alt="logo" className="w-12 h-12  " />
         <div className="md:flex gap-10 hidden">
@@ -53,7 +53,7 @@ const Navbar = () => {
 
       {/* Drawer for small screens */}
       <div
-        className={`fixed w-full bg-[#08052C]  bottom-0  top-14 md:hidden block text-white z-40 transition-transform duration-500 ${
+        className={`fixed w-full bg-black  bottom-0  top-14 md:hidden block text-white z-40 transition-transform duration-500 ${
           isOpen ? "translate-y-0  border-main-light" : "-translate-y-full"
         }`}
       >
