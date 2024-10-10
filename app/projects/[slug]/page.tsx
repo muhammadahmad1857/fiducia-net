@@ -51,7 +51,7 @@ const Project: React.FC<{ params: { slug: string } }> = async ({ params }) => {
         </div>
         <Link
           href="/projects"
-          className="mt-8 px-6 py-3 bg-white text-purple-600 font-semibold rounded-full hover:bg-opacity-70 transition duration-500"
+          className="mt-8 px-8 py-4 text-lg font-bold text-white rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 transition-all duration-300 ease-in-out transform hover:animate-bounce  hover:shadow-xl"
         >
           Back to Projects
         </Link>
@@ -87,13 +87,13 @@ const Project: React.FC<{ params: { slug: string } }> = async ({ params }) => {
               {project.description}
             </p>
             <Link
-              href={project.liveLink ? project.liveLink : "https://google.com"}
+              href={project.liveLink ? project.liveLink : ""}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex justify-center items-center bg-blue-500 text-white font-bold text-lg w-full max-w-xs px-8 py-4 rounded-lg transition duration-500 cursor-pointer ease-in-out hover:bg-blue-600 transform hover:-translate-y-1 hover:shadow-lg"
+              className="group inline-flex justify-center items-center text-white font-bold text-lg w-full max-w-xs px-8 py-4 rounded-lg transition-all duration-300 ease-in-out cursor-pointer bg-gradient-to-r from-blue-500 to-blue-700  transform hover:animate-bounce hover:shadow-xl"
             >
               Visit Live Site
-              <FaExternalLinkAlt className="ml-2 group-hover:rotate-45 transition-transform duration-500" />
+              <FaExternalLinkAlt className="ml-2 group-hover:rotate-45 transition-transform duration-300" />
             </Link>
           </div>
         </div>

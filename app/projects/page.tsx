@@ -44,7 +44,7 @@ const Projects = async () => {
               {/* Project Information */}
               <div className="flex-1 p-4 md:p-6 max-w-2xl">
                 {/* Category */}
-                <p className="text-md text-gray-500 font-bold mb-2 uppercase tracking-wide">
+                <p className="text-md text-gray-400 font-bold mb-2 uppercase tracking-wide">
                   {project.category}
                 </p>
                 {/* Project Title with Live Link */}
@@ -55,7 +55,7 @@ const Projects = async () => {
                   {project.projectName}
                 </Link>
                 {/* Project Description */}
-                <p className="md:text-lg text-sm text-gray-600 mb-6 mt-2  md:leading-tight leading-relaxed">
+                <p className="md:text-lg text-sm text-gray-500 mb-6 mt-2  md:leading-tight leading-relaxed">
                   {project.description}
                 </p>
               </div>

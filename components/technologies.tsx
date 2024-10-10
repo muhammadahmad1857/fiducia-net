@@ -23,7 +23,7 @@ export default async function Technologies() {
   const data = await fetchTechnologies();
 
   return (
-    <div className="bg-black flex lg:flex-row md:px-10 px-2 flex-col items-center md:justify-between justify-center py-10">
+    <div className=" flex lg:flex-row md:px-10 px-2 flex-col items-center md:justify-between justify-center py-10">
       {/* Technology Logos */}
       <div
         className="grid grid-cols-4 gap-4 place-items-center"
