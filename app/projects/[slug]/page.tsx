@@ -1,3 +1,5 @@
+"use client";
+import NotFoundTemplate from "@/components/404-template";
 import Header from "@/components/header";
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
@@ -33,29 +35,13 @@ const Project: React.FC<{ params: { slug: string } }> = async ({ params }) => {
   console.log(project);
   if (!project) {
     return (
-      <div className="flex flex-col items-center justify-center h-[calc(100vh-6rem)] ">
-        <h1 className="text-6xl font-extrabold text-white mb-4">Oops!</h1>
-        <p className="text-3xl font-bold text-white mb-8">Project not found</p>
-        <div className="animate-bounce">
-          <svg
-            className="w-16 h-16 text-white"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-          </svg>
-        </div>
-        <Link
-          href="/projects"
-          className="mt-8 px-8 py-4 text-lg font-bold text-white rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 transition-all duration-300 ease-in-out transform hover:animate-bounce  hover:shadow-xl"
-        >
-          Back to Projects
-        </Link>
-      </div>
+      <NotFoundTemplate
+        title="Project Not Found"
+        desc="Oops! The project you're looking for doesn't exist. It may have been removed or the URL might be incorrect."
+        url="/projects"
+        urlText="Back to Projects"
+        Icon={FaExternalLinkAlt}
+      />
     );
   }
 
