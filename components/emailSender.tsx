@@ -54,7 +54,7 @@ function NewsletterForm() {
   const dismissMessages = () => {
     setSuccessMessage(undefined);
     setErrorMessage("");
-  // make API call
+    // make API call
   };
 
   return (
@@ -74,7 +74,7 @@ function NewsletterForm() {
             ref={buttonRef}
             className={`${
               active && "active"
-            } disabled:!bg-[#17141F] disabled:grayscale-[65%] disabled:opacity-50 disabled:cursor-not-allowed text-sm md:text-base`}
+            } disabled:!bg-[#17141F] -ml-10 disabled:grayscale-[65%] disabled:opacity-50 disabled:cursor-not-allowed text-sm md:text-base`}
             disabled={!input}
             type="submit"
           >

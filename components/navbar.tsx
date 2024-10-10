@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`flex w-full mb-2  max-md:bg-bgColor  h-14 border-b border-white/30 items-center justify-between fixed text-white md:relative top-0  md:px-10 px-2 z-50 py-2  md:py-6 transition-all duration-300`}
+        className={`flex w-full   bg-[#08052C]  h-14 border-b border-white/30 items-center justify-between fixed text-white md:relative top-0  md:px-10 px-2 z-50 py-2  md:py-10 transition-all duration-300`}
       >
         <h1 className="text-3xl  -translate-y-1 text-white">Logo</h1>
         <div className="md:flex gap-10 hidden">
