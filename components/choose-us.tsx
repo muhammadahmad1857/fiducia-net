@@ -3,7 +3,7 @@ import React from "react";
 import MDEditor from "@uiw/react-md-editor";
 const ChooseUs = () => {
   return (
-    <div className="flex flex-col  gap-10 text-center items-center justify-center py-20  bg-main-dark">
+    <div className="flex flex-col md:px-10 px-2 gap-10 text-center items-center justify-center py-20  bg-main-dark">
       <h2 className="sm:text-4xl text-3xl text-main-TEXT  font-bold text-center">
         Why Choose Us
       </h2>

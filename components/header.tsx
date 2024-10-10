@@ -1,12 +1,14 @@
 import React from "react";
-import Navbar from "@/components/navbar";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import InstaIcon from "./instaIcon";
 
 const Header = ({ title, desc }: { title: string; desc: string }) => {
   return (
-    <div className="pb-20 img-container w-screen ">
-      <header className="flex   justify-center text-center md:mt-40 max-md:pt-40   items-center">
+    <div
+      className="pb-20 img-container w-screen "
+      
+    >
+      <header className="flex   justify-center text-center pt-40   items-center">
         <div className="flex flex-col gap-5">
           <h1 className="sm:text-5xl text-3xl font-bold  ">{title}</h1>
           <p className="text-lg text-main-TEXT">{desc}</p>
