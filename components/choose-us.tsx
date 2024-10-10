@@ -1,8 +1,9 @@
+"use client";
 import React from "react";
-
+import MDEditor from "@uiw/react-md-editor";
 const ChooseUs = () => {
   return (
-    <div className="flex flex-col md:px-10 px-2 gap-10 text-center items-center justify-center py-20 bg-main-dark">
+    <div className="flex flex-col md:px-10 px-2 gap-10 text-center items-center justify-center py-20  bg-main-dark">
       <h2 className="sm:text-4xl text-3xl text-main-TEXT  font-bold text-center">
         Why Choose Us
       </h2>
@@ -10,29 +11,32 @@ const ChooseUs = () => {
         We are a team of experienced professionals who are dedicated to
         providing the best service to our clients.
       </p>
-      <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 place-items-center justify-items-center gap-10 ">
+      <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2  place-items-center justify-items-center gap-10 ">
         <div className="choose-us-card group">
-          <h3 className="choose-us-card-title ">Our Mission</h3>
+          <h3 className="choose-us-card-title ">Our Purpose</h3>
           <p className="text-lg text-white">
-            Our mission is to provide the best service to our clients, ensuring
-            their cybersecurity needs are met with excellence.
+            We empower trust through secure blockchain solutions. Our goal is to
+            simplify digital systems with transparency.
           </p>
         </div>
         <div className="choose-us-card group">
-          <h3 className="choose-us-card-title">Our Vision</h3>
+          <h3 className="choose-us-card-title">Our Aspiration</h3>
           <p className="text-lg text-white">
-            We envision a world where businesses can operate securely in the
-            digital landscape, protected by cutting-edge cybersecurity
-            solutions.
+            We envision a future where trust drives digital interactions.
+            Leading blockchain innovation to reshape industries.
           </p>
         </div>
         <div className="choose-us-card md:col-span-2 xl:col-span-1 group">
-          <h3 className="choose-us-card-title">Our Values</h3>
-          <p className="text-lg text-white">
-            Integrity, innovation, and client-centricity are at the core of
-            everything we do, driving us to deliver unparalleled cybersecurity
-            services.
-          </p>
+          <h3 className="choose-us-card-title">Our Guiding Principles</h3>
+          <MDEditor.Markdown
+            className="markdown"
+            source={`
+- *Trust:* Creating transparent and secure solutions.  
+- *Innovation:* Pioneering new blockchain advancements.
+- *Accountability:* Delivering reliable and resilient services.  
+- *Collaboration:* Building success through strong partnerships.
+`}
+          />
         </div>
       </div>
     </div>
