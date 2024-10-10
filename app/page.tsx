@@ -17,7 +17,6 @@ const Home = async () => {
   return (
     <div>
       <Header
-        desc="Our advanced cybersecurity solutions are designed to protect your business from emerging threats, ensuring that you can operate confidently and efficiently. "
         title="Stay Secure, Stay Ahead in a Connected World."
       />
       <Services />
