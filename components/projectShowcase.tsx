@@ -44,7 +44,7 @@ const ProjectShowcase = async () => {
 
           return (
             <Link
-              href={`/projects#${project.slug.current}`}
+              href={`/projects/${project.slug.current}`}
               key={project.slug.current}
               className={`relative rounded-lg max-lg:h-[500px] lg:min-h-[500px] overflow-hidden group max-lg:col-span-1 max-lg:row-span-1 ${columnSpan} ${rowSpan}`}
             >

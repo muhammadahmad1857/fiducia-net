@@ -49,9 +49,7 @@ const Projects = async () => {
                 </p>
                 {/* Project Title with Live Link */}
                 <Link
-                  href={project.liveLink ? project.liveLink : "#"}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={`/projects/${project.slug.current}`}
                   className="text-main-TEXT transition-colors duration-500 text-3xl before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[2px] before:bg-blue-500 before:transition-all before:duration-500 before:hover:w-full font-semibold mb-4 relative group hover:text-blue-500"
                 >
                   {project.projectName}

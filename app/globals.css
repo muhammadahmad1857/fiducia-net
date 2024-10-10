@@ -9,11 +9,6 @@
     text-wrap: balance;
   }
 }
-
-html{
-  @apply scroll-smooth
-}
-
 .img-container{
   background-image: url('/bg-image-landing.png');
   background-size: cover;
@@ -110,9 +105,13 @@ html{
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+
+  
+
+html{
+  @apply scroll-smooth
 }
 
-@layer base {
   * {
     @apply border-border;
   }

@@ -10,7 +10,11 @@ const Navbar = () => {
       <nav
         className={`flex w-full   bg-black  h-14 border-b border-white/30 items-center justify-between fixed text-white md:relative top-0  md:px-10 px-2 z-50 py-2  md:py-10 transition-all duration-300`}
       >
-        <img src="/logo.png" alt="logo" className="w-12 h-12  " />
+        <Link
+            href={"/"}
+          >        <img src="/logo.png" alt="logo" className="w-12 h-12  " />
+
+          </Link>
         <div className="md:flex gap-10 hidden">
           <Link
             href={"/projects"}
