@@ -29,7 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <main className=" bg-black overflow-x-hidden text-white min-h-screen max-w-screen">
+        <main className=" bg-bgColor overflow-x-hidden text-white min-h-screen max-w-screen">
           <Navbar />
           {children}
         </main>

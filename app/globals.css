@@ -10,6 +10,9 @@
   }
 }
 
+html{
+  @apply scroll-smooth
+}
 
 .img-container{
   background-image: url('/bg-image-landing.png');
@@ -341,4 +344,8 @@
 
 .markdown, .markdown ul {
   @apply text-lg text-white group-hover:bg-main-dark list-disc bg-main-light  transition-all duration-300 text-start
+}
+
+.grid-card{
+  grid-auto-rows: 1fr !important;
 }

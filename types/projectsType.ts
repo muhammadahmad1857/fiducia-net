@@ -11,4 +11,5 @@ export default interface ProjectsType {
   slug: {
     current: string;
   };
+  liveLink: string;
 }

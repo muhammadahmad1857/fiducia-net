@@ -39,5 +39,10 @@ export default {
         maxLength: 96,
       },
     },
+    {
+      name: "liveLink",
+      type: "url",
+      title: "Live Link",
+    },
   ],
 };

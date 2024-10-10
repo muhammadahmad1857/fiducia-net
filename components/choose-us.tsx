@@ -11,7 +11,7 @@ const ChooseUs = () => {
         We are a team of experienced professionals who are dedicated to
         providing the best service to our clients.
       </p>
-      <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2  place-items-center justify-items-center gap-10 ">
+      <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 grid-card  place-items-center justify-items-center gap-10 ">
         <div className="choose-us-card group">
           <h3 className="choose-us-card-title ">Our Purpose</h3>
           <p className="text-lg text-white">
