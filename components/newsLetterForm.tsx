@@ -9,8 +9,8 @@ const NewsLetterForm = () => {
           Get more updates...
         </p>
         <p className="text-white/80 max-md:text-center">
-          Sign up for our newsletter and you'll be the first to find out about
-          new
+          Sign up for our newsletter and you&apos;ll be the first to find out
+          about new
           <strong className="text-main-TEXT"> Services</strong>
         </p>
       </div>

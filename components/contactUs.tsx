@@ -1,5 +1,5 @@
 import React from "react";
-import NewsLetterForm from "./newsLetterForm";
+// import NewsLetterForm from "./newsLetterForm";
 
 const ContactUs = () => {
   return (

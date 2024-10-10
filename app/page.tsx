@@ -5,9 +5,7 @@ import Services from "@/components/services";
 import Testimonial from "@/components/testimonial";
 import Technologies from "@/components/technologies";
 import React from "react";
-import ContactUs from "@/components/contactUs";
 import NewsLetterForm from "@/components/newsLetterForm";
-import NewsletterForm from "@/components/emailSender";
 // const fetchData = async () => {
 //   const data = await client.fetch('*[_type == "reviews"]');
 //   console.log(data);
