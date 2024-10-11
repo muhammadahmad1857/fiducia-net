@@ -6,7 +6,7 @@ export default {
     {
       name: "projectName",
       type: "string",
-      title: "ProjectName",
+      title: "Project Name",
     },
     {
       name: "description",
@@ -43,6 +43,12 @@ export default {
       name: "liveLink",
       type: "url",
       title: "Live Link",
+    },
+    {
+      name: "service", // Reference field for associating the project with a service
+      title: "Service",
+      type: "reference",
+      to: [{ type: "services" }], // references the services document
     },
   ],
 };

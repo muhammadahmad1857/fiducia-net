@@ -32,12 +32,13 @@ const Services = async () => {
   return (
     <div className="text-center">
       <Header title="Services And Our Technologies" />
-      {/* Services Section */}
 
+      {/* Services Section */}
       <div className="mx-auto px-4 py-8">
         <div>
           <h2 className="text-3xl font-bold mb-8">Our Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+          <div className="grid grid-cols-1 place-items-center justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
             {services.map((service) => (
               <Link
                 href={`/services/${service.slug.current}`}
@@ -45,12 +46,10 @@ const Services = async () => {
                 className="w-full max-w-sm"
               >
                 <div className="bg-white text-black hover:text-white rounded-lg hover:bg-orange-300 transition-all duration-500 shadow-md p-6 group overflow-hidden hover:shadow-lg  flex flex-col items-center h-full">
-                  {/* Add background color behind the image */}
                   <div
-                    className="p-4 rounded-full relative  mb-4"
+                    className="p-4 rounded-full relative mb-4"
                     style={{ backgroundColor: service.color.hex }}
                   >
-                    {/* The image remains the same size and stays on top */}
                     <img
                       src={urlFor(service.icon.asset._ref).url()}
                       alt={service.serviceName}
@@ -74,16 +73,16 @@ const Services = async () => {
           <h2 className="text-3xl font-bold mb-8 text-white">
             Technologies We Use
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-center">
             {technologies.map((tech) => (
               <div
                 key={tech.technologyName}
-                className="flex flex-col min-w-32 max-w-32 cursor-pointer  hover:bg-orange-500  items-center border-2 border-white/30 rounded-lg p-2  hover:scale-125 transition-all duration-500"
+                className="flex flex-col min-w-32 max-w-32 cursor-pointer hover:bg-orange-500 items-center border-2 border-white/30 rounded-lg p-2 hover:scale-125 transition-all duration-500"
               >
                 <img
                   src={urlFor(tech.image.asset._ref).url()}
                   alt={tech.technologyName}
-                  className="w-20 h-20 object-contain  mb-3"
+                  className="w-20 h-20 object-contain mb-3"
                 />
                 <p className="text-sm text-center text-white">
                   {tech.technologyName}
@@ -94,7 +93,7 @@ const Services = async () => {
         </div>
       </div>
 
-      {/* Contact Us Section (separate div) */}
+      {/* Contact Us Section */}
       <div className="bg-gray-800 mt-16 text-white py-16">
         <div className="container mx-auto px-4">
           <p className="text-xl mb-4">Contact Us</p>
