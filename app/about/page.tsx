@@ -21,7 +21,7 @@ const About = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 mb-16">
-            <div className="bg-gray-800 rounded-lg p-8 hover:shadow-lg hover:shadow-orange-500/30 transition-all duration-300 border border-orange-500/20 cursor-pointer">
+            <div className="bg-gray-800 rounded-lg p-8 hover:shadow-xl hover:shadow-orange-500/30 transition-all duration-500 border border-orange-500/20 cursor-pointer">
               <h2 className="text-3xl font-bold mb-4 text-orange-400">
                 Our Mission
               </h2>
@@ -31,7 +31,7 @@ const About = () => {
                 foster trust in the digital ecosystem.
               </p>
             </div>
-            <div className="bg-gray-800 rounded-lg p-8 hover:shadow-lg hover:shadow-orange-500/30 transition-all duration-300 border border-orange-500/20 cursor-pointer">
+            <div className="bg-gray-800 rounded-lg p-8 hover:shadow-xl hover:shadow-orange-500/30 transition-all duration-500 border border-orange-500/20 cursor-pointer">
               <h2 className="text-3xl font-bold mb-4 text-orange-400">
                 Our Vision
               </h2>
@@ -65,7 +65,7 @@ const About = () => {
               ].map((service, index) => (
                 <li
                   key={index}
-                  className="bg-gray-800 rounded-lg p-6 hover:bg-orange-500 hover:text-white transition-all duration-300 border border-orange-500/20 text-orange-200 cursor-pointer shadow-md hover:shadow-lg hover:shadow-orange-500/30 transform hover:-translate-y-1"
+                  className="bg-gray-800 rounded-lg p-6 hover:bg-orange-500 hover:text-white transition-all duration-500 border border-orange-500/20 text-orange-200 cursor-pointer shadow-md hover:shadow-xl hover:shadow-orange-500/30 transform hover:-translate-y-1"
                 >
                   {service}
                 </li>
