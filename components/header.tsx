@@ -8,7 +8,7 @@ const Header = ({ title }: { title: string }) => {
       <header className="flex   justify-center text-center pt-40   items-center">
         <div className="flex flex-col gap-5">
           <h1 className="sm:text-5xl text-3xl font-bold  ">{title}</h1>
-          <Socials />
+          {/* <Socials /> */}
         </div>
       </header>
     </div>

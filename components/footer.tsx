@@ -12,7 +12,7 @@ const Footer = async () => {
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-5">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 grid-cols-1 md:grid-cols-4 gap-8 ">
           <div className="flex flex-col gap-3 border-b border-gray-700 pb-8 md:border-b-0 md:border-r md:pr-8">
             <h2 className="text-xl font-bold text-orange-500">Who we are</h2>
             <Link
@@ -54,7 +54,7 @@ const Footer = async () => {
             <Socials />
           </div>
         </div>
-        <div className="mt-8 text-center flex items-center justify-between text-sm text-gray-400 border-t border-gray-700 pt-8">
+        <div className="mt-8 text-center flex sm:flex-row flex-col items-center justify-between text-sm text-gray-400 border-t border-gray-700 pt-8">
           <p>© {new Date().getFullYear()} Fiducia Net. All rights reserved.</p>
           <p>
             Made with ❤️ by{" "}
