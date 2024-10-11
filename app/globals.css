@@ -44,7 +44,7 @@
 }
 
 .choose-us-card{
-  @apply md:w-96 max-h-52 min-h-52 overflow-y-auto flex max-w-xl w-full flex-col gap-5 bg-main-light cursor-pointer p-6 rounded-lg shadow-lg transition-all duration-300 hover:bg-main-dark  hover:border-main-light border-2 border-transparent
+  @apply md:w-96 max-h-56 min-h-56 overflow-y-auto flex max-w-xl w-full flex-col gap-5 bg-main-light cursor-pointer p-6 rounded-lg shadow-lg transition-all duration-300 hover:bg-main-dark  hover:border-main-light border-2 border-transparent
 }
 
 .choose-us-card-title{
