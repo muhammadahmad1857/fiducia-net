@@ -1,6 +1,5 @@
 import React from "react";
 
-import Socials from "./socials";
 
 const Header = ({ title }: { title: string }) => {
   return (
