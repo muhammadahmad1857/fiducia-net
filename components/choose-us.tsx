@@ -4,7 +4,7 @@ import MDEditor from "@uiw/react-md-editor";
 const ChooseUs = () => {
   return (
     <div className="flex flex-col md:px-10 px-2 gap-10 text-center items-center justify-center py-20  ">
-      <h2 className="sm:text-4xl text-3xl text-main-TEXT  font-bold text-center">
+      <h2 className="sm:text-4xl text-3xl text-orange-400   font-bold text-center">
         Why Choose Us
       </h2>
       <p className="sm:text-lg text-base text-center text-white">
