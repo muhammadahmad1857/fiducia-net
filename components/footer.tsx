@@ -10,7 +10,7 @@ const Footer = async () => {
   }[] = await client.fetch(`*[_type == "services"]{serviceName, slug}`);
 
   return (
-    <footer className="bg-gray-900 text-white pt-16 pb-5">
+    <footer className="bg-gray-900 mt-10 text-white pt-16 pb-5">
       <div className="container mx-auto px-4">
         <div className="grid sm:grid-cols-2 grid-cols-1 md:grid-cols-4 gap-8 ">
           <div className="flex flex-col gap-3 border-b border-gray-700 pb-8 md:border-b-0 md:border-r md:pr-8">
