@@ -34,11 +34,10 @@ const Services = async () => {
       <Header title="Services And Our Technologies" />
 
       {/* Services Section */}
-      <div className="mx-auto px-4 py-8">
+      <div className="w-screen max-w-screen-2xl px-4 py-8">
         <div>
           <h2 className="text-3xl font-bold mb-8">Our Services</h2>
           <div className="grid grid-cols-1 place-items-center justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
             {services.map((service) => (
               <Link
                 href={`/services/${service.slug.current}`}

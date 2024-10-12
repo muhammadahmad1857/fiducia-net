@@ -45,7 +45,7 @@ const ContactPage = () => {
   return (
     <>
       <Header title="Contact Us" />
-      <div className="mx-auto px-4 py-16 text-white min-h-screen">
+      <div className="  py-16 w-screen max-w-screen-2xl px-4 text-white min-h-screen">
         <h1 className="text-4xl font-bold mb-12 text-center text-orange-400">
           Contact Us
         </h1>

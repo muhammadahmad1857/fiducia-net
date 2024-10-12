@@ -48,7 +48,7 @@ const Project: React.FC<{ params: { slug: string } }> = async ({ params }) => {
   return (
     <div>
       <Header title={project.projectName} />
-      <div className="container mx-auto py-16 md:px-10 px-2">
+      <div className="py-16 md:px-10 px-2">
         <div className="bg-gray-300 shadow-lg shadow-gray-400 rounded-2xl overflow-hidden">
           <div className="relative h-[60vh] group flex items-center justify-center">
             <img
