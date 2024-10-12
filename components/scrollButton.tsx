@@ -34,7 +34,7 @@ const ScrollButton = () => {
         flex items-center justify-center
         bg-white rounded-full
         shadow-lg hover:bg-gray-200
-        transition-all duration-300 ease-in-out
+        transition-all duration-500 ease-in-out
         ${
           visible
             ? "opacity-100 translate-y-0"
