@@ -17,7 +17,7 @@ const Home = async () => {
   return (
     <div>
       <Header
-        title="Stay Secure, Stay Ahead in a Connected World."
+        title="Where Trust Fuels Innovation."
       />
       <Services />
       <ProjectShowcase />
