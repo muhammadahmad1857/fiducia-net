@@ -35,6 +35,8 @@ const ScrollButton = () => {
         bg-white rounded-full
         shadow-lg hover:bg-gray-200
         transition-all duration-500 ease-in-out
+        hover:scale-125
+        cursor-pointer
         ${
           visible
             ? "opacity-100 translate-y-0"
@@ -42,10 +44,7 @@ const ScrollButton = () => {
         }
       `}
     >
-      <FaArrowCircleUp
-        size={24}
-        className="transition-transform text-orange-500 duration-300 ease-in-out group-hover:scale-110"
-      />
+      <FaArrowCircleUp size={24} className=" text-orange-500  " />
     </button>
   );
 };
