@@ -54,14 +54,16 @@ const ProjectShowcase = async () => {
                 alt={project.projectName}
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-700 opacity-0 group-hover:opacity-100"></div>
-              <div className="absolute inset-x-0 bottom-0 flex flex-col justify-end items-start text-white p-4">
+              <div className="absolute inset-x-0 bottom-0 flex flex-col justify-end items-start text-white p-4 transition-transform duration-500 group-hover:-translate-y-4">
                 <p className="text-sm mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                   {project.category}
                 </p>
                 <div className="flex items-center gap-2">
-                  <h1 className="text-2xl font-bold">{project.projectName}</h1>
+                  <h1 className="text-2xl font-bold text-orange-500">
+                    {project.projectName}
+                  </h1>
                   <svg
-                    className="w-6 h-6 mt-2 text-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+                    className="w-6 h-6 mt-2 text-orange-300 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
