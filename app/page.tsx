@@ -6,19 +6,11 @@ import Testimonial from "@/components/testimonial";
 import Technologies from "@/components/technologies";
 import React from "react";
 import NewsLetterForm from "@/components/newsLetterForm";
-// const fetchData = async () => {
-//   const data = await client.fetch('*[_type == "reviews"]');
-//   console.log(data);
-//   return data;
-// };
 
 const Home = async () => {
-  // const data = await fetchData();
   return (
     <div>
-      <Header
-        title="Where Trust Fuels Innovation."
-      />
+      <Header title="Where Trust Fuels Innovation." />
       <Services />
       <ProjectShowcase />
       <ChooseUs />
