@@ -70,7 +70,7 @@ export default async function Technologies() {
 
       {/* Information and Stats */}
       <div className="flex flex-col space-y-3 md:w-1/2 max-md:mt-20">
-        <h1 className="text-white max-md:text-center text-2xl text-orange-400 sm:text-4xl font-bold">
+        <h1 className=" max-md:text-center text-2xl text-orange-400 sm:text-4xl font-bold">
           Technology Capabilities
         </h1>
         <p className="text-white max-md:text-center text-xl">
