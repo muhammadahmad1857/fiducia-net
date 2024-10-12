@@ -5,7 +5,7 @@ import { getTrailsKeyframes } from "@/lib/animations/getTrailKeyFrames";
 import { FaEnvelope, FaCheckCircle } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
 import { gsap } from "gsap";
-import { FormEvent, useRef, useState } from "react";
+import { FormEvent, useRef, useState, useEffect } from "react";
 
 function NewsletterForm() {
   const [input, setInput] = useState("");
@@ -13,8 +13,14 @@ function NewsletterForm() {
     useState<MembersSuccessResponse>();
   const [errorMessage, setErrorMessage] = useState("");
   const [active, setActive] = useState(false);
+  const [isValidEmail, setIsValidEmail] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const { to, fromTo, set } = gsap;
+
+  useEffect(() => {
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    setIsValidEmail(emailPattern.test(input));
+  }, [input]);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -22,7 +28,7 @@ function NewsletterForm() {
     const email = input;
     const button = buttonRef.current;
 
-    if (!email || !button) return;
+    if (!email || !button || !isValidEmail) return;
 
     if (!active) {
       setActive(true);
@@ -68,6 +74,7 @@ function NewsletterForm() {
             placeholder="Email address"
             required
             type="email"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
             className="flex-1 text-white text-sm sm:text-base outline-none placeholder-[#4B4C52] group-focus-within:placeholder-white bg-transparent placeholder:transition-colors placeholder:duration-300"
           />
           <button
@@ -75,7 +82,7 @@ function NewsletterForm() {
             className={`${
               active && "active"
             } disabled:!bg-[#17141F] -ml-10 disabled:grayscale-[65%] disabled:opacity-50 disabled:cursor-not-allowed text-sm md:text-base`}
-            disabled={!input}
+            disabled={!isValidEmail}
             type="submit"
           >
             <span className="default">Subscribe</span>
@@ -113,10 +120,7 @@ function NewsletterForm() {
                   to our waitlist. We&apos;ll let you know when we launch!
                 </p>
               ) : (
-                <p>
-                  You are already added to our waitlist. We&apos;ll let you know
-                  when we launch!
-                </p>
+                <p>{errorMessage}</p>
               )}
             </div>
             <FaXmark
