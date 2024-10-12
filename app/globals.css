@@ -35,12 +35,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1f77b4; /* Color of the scrollbar thumb */
+  background: #e2e8f0; /* Color of the scrollbar thumb */
   border-radius: 50px; /* Round corners */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #223a4a; /* Color of the scrollbar thumb on hover */
+  background: #a0aec0; /* Color of the scrollbar thumb on hover */
 }
 
 .choose-us-card{

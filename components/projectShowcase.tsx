@@ -23,7 +23,9 @@ const ProjectShowcase = async () => {
   const data: ProjectsType[] = await fetchProjects();
   return (
     <div className="my-10 md:px-10 px-2 rounded-lg">
-      <h1 className="text-4xl font-bold text-center mb-10">Projects</h1>
+      <h1 className="text-4xl font-bold text-center text-orange-400 mb-10">
+        Projects
+      </h1>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         {data.map((project, index: number) => {
           let columnSpan = "col-span-1"; // Default column span

@@ -8,9 +8,9 @@ const About = () => {
     <>
       <Header title="About Us" />
       <div>
-        <div className="container mx-auto px-4 py-12">
+        <div className="px-4 py-12">
           <div className="text-center mb-16">
-            <h1 className="text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-500">
+            <h1 className="sm:text-6xl text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-500">
               Our Story
             </h1>
             <p className="text-xl max-w-3xl mx-auto leading-relaxed text-orange-300">

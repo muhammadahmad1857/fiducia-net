@@ -29,7 +29,7 @@ const Testimonial = async () => {
     <div className="flex flex-col items-center md:flex-row md:justify-between md:items-start w-full py-10 px-2 md:px-10 gap-8">
       {/* First Column: Video Section */}
       <div className="w-full md:w-1/2 md:mt-20 max-w-[500px] flex flex-col items-center md:items-start">
-        <h1 className="text-2xl pb-6 font-bold text-center md:text-left">
+        <h1 className="text-2xl pb-6 font-bold text-orange-400 text-center md:text-left">
           What our Clients Say About Us
         </h1>
         <div className="aspect-video w-full max-h-[500px]">

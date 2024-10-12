@@ -25,7 +25,9 @@ export default async function Services() {
   // console.log(data);
   return (
     <div className=" md:px-10 px-2  my-10">
-      <h1 className="text-4xl font-bold text-center mb-10">Services</h1>
+      <h1 className="text-4xl font-bold text-center text-orange-400 mb-10">
+        Services
+      </h1>
 
       <div className="grid grid-cols-1  sm:grid-cols-2 xl:grid-cols-3 gap-4 place-items-center  justify-items-center">
         {data?.map((item: ServicesDataType, index: number) => (
