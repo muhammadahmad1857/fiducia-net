@@ -28,9 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="light">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased grid place-items-center bg-bgColor overflow-x-hidden text-white min-h-screen w-full`}
       >
-        <main className=" bg-bgColor overflow-x-hidden text-white min-h-screen max-w-screen">
+        <main className="  max-w-screen-2xl">
           <Navbar />
           {children}
           <Footer />
