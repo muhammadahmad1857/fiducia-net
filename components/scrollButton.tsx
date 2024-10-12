@@ -39,8 +39,8 @@ const ScrollButton = () => {
         cursor-pointer
         ${
           visible
-            ? "opacity-100 translate-y-0"
-            : "opacity-0 translate-y-10 pointer-events-none"
+            ? "opacity-100 translate-y-0 scale-100"
+            : "opacity-0 translate-y-10 scale-50 pointer-events-none"
         }
       `}
     >
