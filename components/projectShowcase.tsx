@@ -49,7 +49,7 @@ const ProjectShowcase = async () => {
               className={`relative rounded-lg max-lg:h-[500px] lg:min-h-[500px] overflow-hidden group max-lg:col-span-1 max-lg:row-span-1 ${columnSpan} ${rowSpan}`}
             >
               <img
-                className="w-full h-full object-cover transition-transform duration-700 "
+                className="w-full h-full object-fit object-center  transition-transform duration-700 "
                 src={urlFor(project.image.asset._ref).url()}
                 alt={project.projectName}
               />
