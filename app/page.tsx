@@ -10,7 +10,7 @@ import NewsLetterForm from "@/components/newsLetterForm";
 const Home = async () => {
   return (
     <div>
-      <Header title="Where Trust Fuels Innovation." />
+      <Header  />
       <Services />
       <ProjectShowcase />
       <ChooseUs />

@@ -25,7 +25,7 @@ const Projects = async () => {
   const data = await fetchProjects();
   return (
     <>
-      <Header title="See Our Work" />
+      <Header />
       <div className="w-full px-4 py-6 md:px-10">
         {/* Beautiful Heading */}
         <h1 className="text-4xl font-bold text-center text-main-TEXT my-8">

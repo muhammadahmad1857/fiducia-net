@@ -31,7 +31,7 @@ const Services = async () => {
 
   return (
     <div className="text-center">
-      <Header title="Services And Our Technologies" />
+      <Header  />
 
       {/* Services Section */}
       <div className="w-screen max-w-screen-2xl px-4 py-8">

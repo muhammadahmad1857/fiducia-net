@@ -56,7 +56,7 @@ export default async function ServicePage({ params }: Props) {
 
   return (
     <>
-    <Header title={service.serviceName}/>
+    <Header/>
     <div className=" px-4 py-16 bg-gray-900 text-white min-h-screen">
       {/* Service Info */}
       <div className="bg-gray-800 shadow-xl rounded-lg p-8 mb-12 transition-all duration-300 hover:shadow-2xl border border-gray-700">

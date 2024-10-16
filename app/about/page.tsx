@@ -6,7 +6,7 @@ import Socials from "@/components/socials";
 const About = () => {
   return (
     <>
-      <Header title="About Us" />
+      <Header />
       <div>
         <div className="px-4 py-12">
           <div className="text-center mb-16">
