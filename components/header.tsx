@@ -1,14 +1,13 @@
 import React from "react";
 
-const Header = ({ title }: { title: string }) => {
+const Header = () => {
   return (
-    <div className="pb-20 img-container w-screen ">
-      <header className="flex   justify-center text-center pt-40   items-center">
-        <div className="flex flex-col gap-5">
-          <h1 className="sm:text-5xl text-3xl font-bold">{title}</h1>
-          {/* <Socials /> */}
-        </div>
-      </header>
+    <div className="pb-40 relative w-screen h-[500px]">
+      <img
+        src="/bg-video.gif"
+        alt="Header Background"
+        className="absolute rounded-xl top-0 left-0 w-full h-full object-fill"
+      />
     </div>
   );
 };

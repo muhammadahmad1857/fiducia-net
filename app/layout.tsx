@@ -1,20 +1,11 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import ScrollButton from "@/components/scrollButton";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const roboto = Roboto({ weight: ["400", "700"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Fiducia Net | Tech Company",
@@ -29,14 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="light">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased grid place-items-center bg-bgColor overflow-x-hidden text-white min-h-screen w-full`}
+        className={`${roboto.className} antialiased grid place-items-center bg-bgColor overflow-x-hidden  text-white min-h-screen w-screen`}
       >
-        <main className="  max-w-screen-2xl">
+        <main className="  max-w-screen-2xl ">
           <Navbar />
           {children}
-          <Footer />  
-                <ScrollButton />
-
+          <Footer />
+          <ScrollButton />
         </main>
       </body>
     </html>
